@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { IFilme } from '../models/IFilme.model';
+import { DadosService } from '../services/dados.service';
 
 @Component({
   selector: 'app-tab1',
@@ -17,7 +19,8 @@ export class Tab1Page {
       duracao: '1h 36m',
       classificacao: 76,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQk9GLOjM7gAfqHdWWzt7emGP16.jpg',
-      generos:['Thriller', 'Crime', 'Ação', 'Drama']
+      generos: ['Thriller', 'Crime', 'Ação', 'Drama'],
+      pagina: '/takedown'
 
     },
     {
@@ -26,11 +29,22 @@ export class Tab1Page {
       duracao: '1h 48m',
       classificacao: 76,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hWSyHulb0bNThDCRvJEFvWv4J2a.jpg',
-      generos: ['Ação', 'Crime', 'Drama']
+      generos: ['Ação', 'Crime', 'Drama'],
+      pagina: '/antitrust'
     },
 
   ];
-  constructor(public alertController: AlertController,public toastController: ToastController) {}
+  constructor(
+    public alertController: AlertController,
+    public toastController: ToastController,
+    public dadosService: DadosService,
+    public route: Router,
+  ) { }
+
+  exibirFilme(filme: IFilme) {
+    this.dadosService.guardarDados('filme', filme);
+    this.route.navigateByUrl('/dados-filme');
+  }
   async exibirAlertaFavorito() {
     const alert = await this.alertController.create({
       header: 'Alerta',
