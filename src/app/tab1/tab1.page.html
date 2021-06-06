@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="dark">
-  <ion-searchbar animated placeholder="texto"></ion-searchbar>
+  <ion-searchbar (ionChange)="buscarFilmes($event)" animated placeholder="texto"></ion-searchbar>
   <ion-list>
     <ion-item-sliding *ngFor="let filme of listaVideos">
       <ion-item lines="full" (click)="exibirFilme(filme)">
