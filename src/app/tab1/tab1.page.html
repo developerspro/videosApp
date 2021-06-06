@@ -5,23 +5,56 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="dark">
-  <ion-searchbar animated placeholder="Insira o texto"></ion-searchbar>
+  <ion-searchbar animated placeholder="texto"></ion-searchbar>
   <ion-list>
-    <ion-item lines="full">
-      <ion-thumbnail slot="end">
-        <img
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQk9GLOjM7gAfqHdWWzt7emGP16.jpg"
-        />
-      </ion-thumbnail>
-      <ion-label><div>
-        <h1>TakeDown</h1>
-        <p>28/09/2004 (BR)  1h 36m</p>
-        <p> Thriller, Crime, Ação, Drama </p>
-      </div></ion-label>
-      <ion-chip color="success" outline>
-        <ion-label ion-text-wrap>76%</ion-label>
-      </ion-chip>
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="end">
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQk9GLOjM7gAfqHdWWzt7emGP16.jpg"
+          />
+        </ion-thumbnail>
+        <ion-label
+          ><div>
+            <h1>TakeDown</h1>
+            <p>28/09/2004 (BR) 1h 36m</p>
+            <p>Thriller, Crime, Ação, Drama</p>
+          </div></ion-label
+        >
+        <ion-chip color="success" outline>
+          <ion-label ion-text-wrap>76%</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option expandable>
+          <ion-icon slot="icon-only" name="star">Favoritos</ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-     </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="end">
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hWSyHulb0bNThDCRvJEFvWv4J2a.jpg"
+          />
+        </ion-thumbnail>
+        <ion-label
+          ><div>
+            <h1>Ameaça Virtual</h1>
+            <p>12/01/2001 (BR) 1h 48m</p>
+            <p> Ação, Crime, Drama </p>
+          </div></ion-label
+        >
+        <ion-chip color="success" outline>
+          <ion-label ion-text-wrap>76%</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option expandable>
+          <ion-icon slot="icon-only" name="star">Favoritos</ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>
