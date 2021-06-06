@@ -25,12 +25,39 @@ export class Tab1Page {
     },
     {
       nome: 'Ameaça Virtual',
+      lancamento: '14/09/1995',
+      duracao: '1h 47m',
+      classificacao: 63,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1K6Y6leZwe18BydZxbkN2wvQRvA.jpg',
+      generos: ['Ação', 'Crime', 'Drama'],
+      pagina: '/antitrust'
+    },
+    {
+      nome: 'Hackers: Piratas de Computador',
       lancamento: '12/01/2001',
       duracao: '1h 48m',
       classificacao: 76,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hWSyHulb0bNThDCRvJEFvWv4J2a.jpg',
-      generos: ['Ação', 'Crime', 'Drama'],
-      pagina: '/antitrust'
+      generos: [ 'Ação', 'Crime', 'Thriller', 'Drama' ],
+      pagina: ''
+    },
+    {
+      nome: 'Revolution OS',
+      lancamento: '01/01/2001 ',
+      duracao: '1h 25m',
+      classificacao: 67,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/h7oBhsEsiHUgZ1uflyqBafB6SoB.jpg',
+      generos: [ 'Documentário', 'Comédia' ],
+      pagina: ''
+    },
+    {
+      nome: 'Steve Jobs',
+      lancamento: '14/01/2016',
+      duracao: '2h 2m',
+      classificacao: 76,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lCzMkFxRE9IolEKSJBt2LlyQCg0.jpg',
+      generos: [ 'Drama', 'História' ],
+      pagina: ''
     },
 
   ];
