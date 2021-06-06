@@ -84,6 +84,14 @@
   --ion-color-orange-shade: #e07100;
   --ion-color-orange-tint: #ff8d1a;
 
+  /** kawasaki **/
+
+  --ion-color-kawasaki: #3ecc04;
+  --ion-color-kawasaki-rgb: 62,204,4;
+  --ion-color-kawasaki-contrast: #000000;
+  --ion-color-kawasaki-contrast-rgb: 0,0,0;
+  --ion-color-kawasaki-shade: #37b404;
+  --ion-color-kawasaki-tint: #51d11d;
 }
 
 .ion-color-orange {
@@ -93,4 +101,13 @@
   --ion-color-contrast-rgb: var(--ion-color-orange-contrast-rgb);
   --ion-color-shade: var(--ion-color-orange-shade);
   --ion-color-tint: var(--ion-color-orange-tint);
+}
+
+.ion-color-kawasaki {
+  --ion-color-base: var(--ion-color-kawasaki);
+  --ion-color-base-rgb: var(--ion-color-kawasaki-rgb);
+  --ion-color-contrast: var(--ion-color-kawasaki-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-kawasaki-contrast-rgb);
+  --ion-color-shade: var(--ion-color-kawasaki-shade);
+  --ion-color-tint: var(--ion-color-kawasaki-tint);
 }

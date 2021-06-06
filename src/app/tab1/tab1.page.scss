@@ -12,7 +12,12 @@ p{font-size: 0.6rem;}
 p+p { color:#8a8a8a}
 
 ion-chip{
-  padding-inline:3px;
+  padding-inline-end:3px;
+}
+ion-badge{
+  font-weight: 300;
+  font-size:0.6rem;
+  margin-right: 2px;
 }
 }
 
