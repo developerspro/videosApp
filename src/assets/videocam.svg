@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="ionicon"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="videocam.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient843-8">
+      <stop
+         style="stop-color:#00ff00;stop-opacity:1;"
+         offset="0"
+         id="stop839" />
+      <stop
+         style="stop-color:#ff8e0d;stop-opacity:0.82329315"
+         offset="1"
+         id="stop841" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843-8"
+       id="linearGradient847"
+       gradientUnits="userSpaceOnUse"
+       x1="236.30699"
+       y1="-3.1719022"
+       x2="389.35144"
+       y2="142.73575"
+       gradientTransform="translate(-0.6458773,3.0404939)" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="877"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.63053575"
+     inkscape:cx="171.0461"
+     inkscape:cy="418.29536"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">Videocam</title>
+  <rect
+     style="opacity:1;fill:url(#linearGradient847);fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.75748;stroke-dasharray:1.75748, 14.0598"
+     id="rect837"
+     width="495.61029"
+     height="483.71561"
+     x="8.8698387"
+     y="14.142164"
+     ry="89.606339" />
+  <path
+     d="m 464.67498,384.39 a 32,32 0 0 1 -13,-2.77 15.77,15.77 0 0 1 -2.71,-1.54 l -82.71,-58.22 a 32,32 0 0 1 -13.58,-26.16 v -79.4 a 32,32 0 0 1 13.58,-26.16 l 82.71,-58.22 a 15.77,15.77 0 0 1 2.71,-1.54 32,32 0 0 1 45,29.24 v 192.76 a 32,32 0 0 1 -32,32 z m -196,15.61 H 84.674985 a 68.07,68.07 0 0 1 -68,-68 V 180 a 68.07,68.07 0 0 1 68,-68 H 269.15498 a 67.6,67.6 0 0 1 67.52,67.52 V 332 a 68.07,68.07 0 0 1 -68,68 z"
+     id="path4" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.3463px;line-height:1.25;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';fill:#666666;stroke:#ffffff;stroke-width:2.22772;stroke-opacity:0.236948"
+     x="107.76328"
+     y="466.91827"
+     id="text856"><tspan
+       sodipodi:role="line"
+       id="tspan854"
+       x="107.76328"
+       y="466.91827"
+       style="fill:#666666;stroke:#ffffff;stroke-width:2.22772;stroke-opacity:0.236948">VideosApp</tspan></text>
+</svg>
