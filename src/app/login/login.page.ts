@@ -24,6 +24,10 @@ export class LoginPage implements OnInit {
       this.presentToast('Usuario ou senha inválidos', 'danger');
     }
   }
+
+  registrar() {
+    this.route.navigateByUrl('registrar');
+  }
   async presentToast(texto: string,cor: string) {
     const toast = await this.toastController.create({
       message: texto,

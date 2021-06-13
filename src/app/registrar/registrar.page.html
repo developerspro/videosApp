@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-card color="dark">
+      <ion-card-title class="ion-text-center">Videos App</ion-card-title>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input type="text" [(ngModel)]="cpf"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Data de Nascimento</ion-label>
+        <ion-input type="date" [(ngModel)]="date"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Gênero</ion-label>
+        <ion-input type="genero" [(ngModel)]="genero"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="dark">
+        <ion-label position="floating">Confirme a Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="confsenha"></ion-input>
+      </ion-item>
+      <ion-button (click)="doRegistrar()" expand="full" fill="outline" color="light">
+        Registrar
+      </ion-button>
+      <ion-button (click)="doCancelar()" expand="full" fill="outline" color="light">
+        Cancelar
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>
