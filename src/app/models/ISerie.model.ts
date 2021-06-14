@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-export interface ISerieApi {
+export interface ISerie {
   poster_path?: string;
   adult?: boolean;
   overview?: string;
@@ -18,7 +18,7 @@ export interface ISerieApi {
 export interface IListaSeries
 {
   page: number;
-  results: IFilmeApi[];
+  results: IListaSeries;
   total_results: number;
   total_pages: number;
 }

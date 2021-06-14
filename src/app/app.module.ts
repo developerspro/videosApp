@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { SerieService } from './services/serie.service';
 
 registerLocaleData(localePt);
 @NgModule({
@@ -22,7 +23,7 @@ registerLocaleData(localePt);
 
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    DadosService,
+    DadosService,SerieService,
     {provide:LOCALE_ID,useValue:'pt-BR'},
   ],
   bootstrap: [AppComponent],

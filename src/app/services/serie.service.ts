@@ -1,8 +1,9 @@
-import { IListaSeries } from './../models/ISerie.model';
+import { IListaSeries, ISerie } from './../models/ISerie.model';
 import { ToastController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class SerieService {
 
   buscarFilmes(busca: string): Observable<IListaSeries>{
     const url = `${this.apiURL}search/movie${this.key}&language=${this.lingua}&region=${this.regiao}&query=${busca}`;
-    return this.http.get<ISeries>(url).pipe(
+    return this.http.get<ISerie>(url).pipe(
       map(retorno => retorno),
       catchError(erro=>this.exibirErro(erro))
     );

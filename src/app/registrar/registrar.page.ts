@@ -1,4 +1,5 @@
-import { IRegistrar } from './../models/IRegistrar.Model';
+import { DadosService } from './../services/dados.service';
+import { IRegistrar } from '../models/IRegistrar.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
@@ -10,22 +11,30 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./registrar.page.scss'],
 })
 export class RegistrarPage implements OnInit {
-
-  nome: string;
+  titulo = 'Registre-se';
+  /*nome: string;
   cpf: string;
   datanasc: string;
   genero: number;
   email: string;
   senha: string;
   confsenha: string;
-  constructor(public toastController: ToastController, private route: Router) { }
+*/
+  confsenha: string;
+  senha: string;
+  registro: IRegistrar;
+  constructor(public toastController: ToastController, private route: Router, public dadosService: DadosService) { }
 
   ngOnInit() {
+
   }
 
   doRegistrar() {
+    console.log('LOG:'+this.registro);
     if (this.senha === this.confsenha) {
-      console.log(this.confsenha);
+      this.dadosService.guardarDados(this.registro.cpf, this.registro);
+      this.route.navigateByUrl('login');
+      console.log(this.registro);
       console.log('senha ok');
 
     } else {
@@ -43,6 +52,7 @@ export class RegistrarPage implements OnInit {
     });
     toast.present();
   }
+
   doCancelar() {
     this.route.navigateByUrl('login');
   }
